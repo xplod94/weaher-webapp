@@ -67,7 +67,7 @@ app.get('/weather', (req, res) => {
 
             res.send({
                 address: locationData.location,
-                weather: weatherData.summary + ' It is ' + weatherData.temperature + ' degrees out with a ' + weatherData.precipProbability + '% chance of rain.'
+                weather: weatherData.summary + ' It is ' + weatherData.temperature + ' degrees out with a high of ' + weatherData.tempHigh + ' degrees and a low of ' + weatherData.tempLow + ' degrees. There is a ' + weatherData.precipProbability + '% chance of rain.'
             })
         })
     })

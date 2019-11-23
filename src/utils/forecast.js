@@ -20,7 +20,9 @@ const forecast = (lat, long, callback) => {
                 callback(undefined, {
                     summary: daily.data[0].summary,
                     temperature: currently.temperature,
-                    precipProbability: currently.precipProbability
+                    precipProbability: currently.precipProbability,
+                    tempHigh: daily.data[0].apparentTemperatureHigh,
+                    tempLow: daily.data[0].apparentTemperatureLow
                 })
             }
         }
