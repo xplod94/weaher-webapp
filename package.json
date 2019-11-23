@@ -4,9 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "cd src && node app.js",
-    "server-watch": "cd src && nodemon app.js -e js,hbs"
+    "start": "node src/app.js"
   },
   "keywords": [],
   "author": "",
