@@ -5,7 +5,7 @@ const messageTwo = document.querySelector('#message-2')
 
 locationForm.addEventListener('submit', (event) => {
     event.preventDefault()
-    fetch('http://localhost:3000/weather?address=' + locationInput.value).then((response) => {
+    fetch('/weather?address=' + locationInput.value).then((response) => {
         response.json().then((data) => {
             if (data.error) {
                 messageOne.textContent = data.error
